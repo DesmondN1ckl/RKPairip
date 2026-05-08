@@ -110,7 +110,7 @@ class FileCheck:
                 (
                     "https://github.com/TechnoIndian/Tools/releases/download/Tools/APKEditor.jar",
                     self.APKEditor_Path,
-                    "bec1dd156850df8392c9a45a735b86ae71bc913325ee029ffbb4080a8b41ca1c"
+                    "026906af28497577496a3e1f5054a878a7cf9c1b3889626882d87ea88d09c20f"
                 ),
                 (
                     "https://github.com/TechnoIndian/Tools/releases/download/Tools/Pairip.jar",
@@ -141,7 +141,7 @@ class FileCheck:
                 (
                     "https://github.com/TechnoIndian/Tools/releases/download/Tools/APKTool.jar",
                     self.APKTool_Path,
-                    "b947b945b4bc455609ba768d071b64d9e63834079898dbaae15b67bf03bcd362"),
+                    "eee4669a704a14e0623407e6701b0b91887e61e1e4049cb7a82833e14ae8b5fd"),
                 (
                     "https://github.com/TechnoIndian/Tools/releases/download/Tools/Axml2Xml.jar",
                     self.Axml2Xml_Path,
