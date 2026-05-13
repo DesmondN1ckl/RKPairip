@@ -140,3 +140,7 @@ Fix Dex Regex
   </a><p>
 [![Telegram](https://img.shields.io/badge/TELEGRAM-OWNER-red?style=for-the-badge&logo=telegram)](https://t.me/RK_TECHNO_INDIA)
 </p>
+
+Original Github link:
+
+    https://github.com/TechnoIndian/RKPairip
