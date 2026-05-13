@@ -46,30 +46,10 @@ def check_dependencies():
     try:
         M.subprocess.run(['java', '-version'], check=True, text=True, capture_output=True)
     except (M.subprocess.CalledProcessError, FileNotFoundError):
-        if M.os.name == 'posix':
-            install_package('openjdk-17')
-        else:
-            exit(
-                f'\n\n{C.ERROR} Java is not installed on Your System.  ✘\n'
-                f'\n{C.INFO} Install Java & Run Script Again in New CMD.  ✘\n'
-                f'\n{C.INFO} Verify Java Installation {C.G} java --version\n'
-            )
-
-    if M.os.name == 'posix': install_package('aapt')
-
-
-# ---------------- Install Package ----------------
-def install_package(pkg):
-    try:
-        result = M.subprocess.run(['pkg', 'list-installed'], capture_output=True, text=True, check=True)
-        if pkg not in result.stdout:
-            print(f"{C.S} Installing {C.E} {C.OG}➸❥ {C.G}{pkg}...\n")
-            M.subprocess.check_call(['pkg', 'install', '-y', pkg])
-            Clear()
-    except (M.subprocess.CalledProcessError, Exception):
         exit(
-            f"\n\n{C.ERROR} No Internet Connection.  ✘\n"
-            f"\n{C.INFO} Internet Connection is Required to Installation {C.G} pkg install {pkg}\n"
+            f'\n\n{C.ERROR} Java is not installed on Your System.  ✘\n'
+            f'\n{C.INFO} Install Java & Run Script Again in New CMD.  ✘\n'
+            f'\n{C.INFO} Verify Java Installation {C.G} java --version\n'
         )
 
 check_dependencies()
@@ -156,11 +136,6 @@ def RK_Techno_IND():
     END = f'{C.CC} Seconds\n'
 
 
-    if M.os.name == 'posix':
-        M.subprocess.run(['termux-wake-lock'])
-
-        print(f"\n{C.X} {C.C} Acquiring Wake Lock...\r")
-
     start_time = M.time.time()
 
 
@@ -213,11 +188,6 @@ def RK_Techno_IND():
             )
 
             print(Logo)
-
-            if M.os.name == 'posix':
-                M.subprocess.run(['termux-wake-unlock'])
-
-                exit(f"\n{C.X} {C.C} Releasing Wake Lock...\n")
 
             exit(0)
 
@@ -288,11 +258,6 @@ def RK_Techno_IND():
             + END +
             f'\n{Logo}'
         )
-
-        if M.os.name == 'posix':
-            M.subprocess.run(['termux-wake-unlock'])
-
-            exit(f"\n{C.X} {C.C} Releasing Wake Lock...\n")
 
         exit(0)
 
@@ -473,10 +438,5 @@ def RK_Techno_IND():
                     break
 
     print(Logo)
-
-    if M.os.name == 'posix':
-        M.subprocess.run(['termux-wake-unlock'])
-
-        exit(f"\n{C.X} {C.C} Releasing Wake Lock...\n")
 
     exit(0)
