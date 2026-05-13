@@ -1,61 +1,22 @@
-<p align="center">
-<a href="https://t.me/rktechnoindians"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
-</p>
+# Install:
 
-<a name="readme-top"></a>
+pip:
 
+    pip install --force-reinstall git+https://github.com/DesmondN1ckl/RKPairip/RKPairip.git
 
-# RKPairip
+uv:
 
+    uv tool install 
 
-<p align="center"> 
-<a href="https://t.me/rktechnoindians"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&pause=1000&color=F74848&center=true&vCenter=true&random=false&width=435&lines=RKPairip" /></a>
- </p>
+# Uninstall
 
-Installation Method
--------
+pip:
 
-**💢 Requirement PKG 💢**
+    pip uninstall pairip
 
-```bash
-termux-setup-storage
-pkg update -y
-pkg upgrade -y
-pkg install python -y
-```
+uv:
 
-**👉🏻 To install RKPairip, Run only any one cmd from the Installation Method**
-
-**💢 PYPI ( Just Testing ) 💢**
-
-    pip install Pairip
-
-[![PyPI](https://img.shields.io/badge/pypi-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](https://pypi.org/project/Pairip) [![Version](https://img.shields.io/pypi/v/Pairip?label=&style=for-the-badge&color=FF8C00&labelColor=FF8C00)](https://pypi.org/project/Pairip)
-
-
-**1st. Method**
-
-`💢 For Latest Commit ( From Main  Branch )  💢`
-
-    pip install --force-reinstall https://github.com/TechnoIndian/RKPairip/archive/refs/heads/main.zip
-
-`OR`
-
-    pip install --force-reinstall https://github.com/TechnoIndian/RKPairip/archive/refs/heads/main.tar.gz
-
-`OR`
-
-    curl -Ls https://github.com/TechnoIndian/Tools/releases/download/Tools/RKPairip.sh | bash
-
-**2nd. Method**
-
-    pkg install python git && pip install --force-reinstall git+https://github.com/TechnoIndian/RKPairip.git
-
-
-Uninstall RKPairip
------
-
-    pip uninstall Pairip
+    uv tool uninstall pairip
 
 
 
@@ -170,8 +131,8 @@ Fix Dex Regex
     # Nothing(Means Empty) 
 
 
-Note
-----
+
+# Credits from original creator:
 
 ## 🇮🇳 Welcome By Techno India 🇮🇳
 
